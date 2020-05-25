@@ -1,0 +1,49 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    &_title{
+        p{
+            font-size:2em;
+            background-color:$title-color;
+            text-align:center;
+            colot:$main-color;
+        }
+    }
+    &_photo{
+        height:350px;
+        display:flex;
+        &_img{
+            width:100%;
+            height:100%;
+            border-radius:50%;
+            border: 5px rgba(27,27,27,0.5) solid;
+        }
+        &_block{
+            margin:auto;
+            width:50%;
+            align-self:center;
+        }
+    }
+    &_description{
+        width:95%;
+        margin:auto;
+    }
+}
+#column{
+    &_hobby{
+        margin-top:auto;
+        &_row{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-around;
+        }
+    }
+}
+.hobby{
+    width:25%;
+    &_img{
+        width:80%;
+        border: 3px solid black;
+        border-radius:50%;
+    }
+}

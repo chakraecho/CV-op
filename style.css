@@ -1,0 +1,65 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  width: 35%;
+  background-color: #03A9F4;
+}
+.column_section {
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.column_title p {
+  font-size: 2em;
+  background-color: #808080;
+  text-align: center;
+  colot: #03A9F4;
+}
+.column_photo {
+  height: 350px;
+  display: flex;
+}
+.column_photo_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px rgba(27, 27, 27, 0.5) solid;
+}
+.column_photo_block {
+  margin: auto;
+  width: 50%;
+  align-self: center;
+}
+.column_description {
+  width: 95%;
+  margin: auto;
+}
+
+#column_hobby {
+  margin-top: auto;
+}
+#column_hobby_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.hobby {
+  width: 25%;
+}
+.hobby_img {
+  width: 80%;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
