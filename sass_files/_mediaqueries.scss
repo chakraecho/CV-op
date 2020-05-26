@@ -1,0 +1,44 @@
+@media screen and (max-width:1000px) {
+    body{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+
+        &_section {
+        }
+
+        &_photo {
+            height: auto;
+            padding-top: 20px;
+            width: 100%;
+
+            &_block {
+                width: 20%;
+                height: auto;
+            }
+        }
+
+        &_contact {
+            width: 33.33333333333333333333333333333333333%;
+        }
+
+        &_about {
+            width: 33.33333333333333333333333333333333333%;
+        }
+
+        &_hobby {
+            width: 33.33333333333333333333333333333333333%;
+            margin: 0px;
+        }
+    }
+
+    #main_content {
+        width: 100%;
+    }
+}
