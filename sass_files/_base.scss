@@ -12,3 +12,35 @@ body{
         width:100%;
     }
 }
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+.main_content {
+    width: 65%;
+}
+
+header {
+    height: 350px;
+    
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+.section_title {
+    p {
+        font-size: 3em;
+        border-bottom: $main-color 2px solid;
+    }
+}

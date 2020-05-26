@@ -6,7 +6,7 @@
             font-size:2em;
             background-color:$title-color;
             text-align:center;
-            colot:$main-color;
+            color:$main-color;
         }
     }
     &_photo{
@@ -45,5 +45,48 @@
         width:80%;
         border: 3px solid black;
         border-radius:50%;
+    }
+}
+#main {
+    &_content {
+        width: 65%;
+    }
+
+    &_header {
+        &_title {
+            &_name {
+                color: $main-color;
+            }
+
+            &_description {
+                font-size: 2.5em;
+            }
+        }
+    }
+}
+
+.section {
+    &_date {
+        width: 25%;
+    }
+
+    &_title {
+        &_img {
+            height: 1em;
+            margin-right: 10px;
+        }
+    }
+
+    &_content {
+        width: 75%;
+
+        &_title {
+            font-weight: bold;
+        }
+
+        &_secondary {
+            line-height: 2em;
+            vertical-align: center;
+        }
     }
 }
