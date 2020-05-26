@@ -4,6 +4,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
+  font-family: "Cabin-Regular", sans-serif;
 }
 
 .column {
@@ -125,6 +126,12 @@ h1 {
 .section_content_secondary {
   line-height: 2em;
   vertical-align: center;
+}
+
+#reference_people {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .underline {

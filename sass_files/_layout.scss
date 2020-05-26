@@ -96,5 +96,11 @@
             line-height: 2em;
             vertical-align: center;
         }
-    }
+}
+
+}
+#reference_people {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
