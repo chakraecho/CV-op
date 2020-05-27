@@ -49,6 +49,7 @@ h1 {
 .column {
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 .column_title p {
   font-size: 2em;
@@ -102,6 +103,7 @@ h1 {
 
 #main_content {
   width: 65%;
+  padding-bottom: 20px;
 }
 #main_header_title_name {
   color: #03A9F4;
@@ -136,6 +138,27 @@ h1 {
 
 .underline {
   border-bottom: 2px #03A9F4 solid;
+}
+
+.list {
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #03A9F4;
+  display: inline-block;
+  margin: 0.5em;
+  position: relative;
+}
+.list_main::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 1em;
+  height: 1em;
+  border: 2px #03A9F4 solid;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 1000px) {
