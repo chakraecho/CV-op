@@ -2,3 +2,27 @@
 .underline {
     border-bottom: 2px $main-color solid;
 }
+
+.list {
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: $main-color;
+    display: inline-block;
+    margin: 0.5em;
+    position: relative;
+
+    &_main {
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            content: "";
+            width: 1em;
+            height: 1em;
+            border: 2px $main-color solid;
+            border-radius: 50%;
+        }
+    }
+}
