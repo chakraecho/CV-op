@@ -189,28 +189,29 @@ h1 {
   #main_content {
     width: 100%;
   }
-}
-#column_photo {
-  width: 100%;
-}
-#column_hobby {
-  margin: 0px;
-}
 
-.hobby {
-  display: flex;
-  justify-content: center;
-}
-.hobby_img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 3px solid #808080;
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  font-size: 1.5em;
-  color: #808080;
+  #column_photo {
+    width: 100%;
+  }
+  #column_hobby {
+    margin: 0px;
+  }
+
+  .hobby {
+    display: flex;
+    justify-content: center;
+  }
+  .hobby_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #808080;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    font-size: 1.5em;
+    color: #808080;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
