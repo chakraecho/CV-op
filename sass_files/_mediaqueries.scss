@@ -1,7 +1,13 @@
-@media screen and (max-width:1000px) {
+@media screen and (max-width:950px) {
     body{
+
+    }
+    .page {
+        width: 100%;
+        margin: auto;
         display: flex;
         flex-direction: column-reverse;
+        border: 1px grey solid;
     }
 
     .column {

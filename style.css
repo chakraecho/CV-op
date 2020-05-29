@@ -78,6 +78,7 @@ h1 {
   margin: auto;
   width: 50%;
   align-self: center;
+  padding-top: 10px;
 }
 .column_description {
   width: 95%;
@@ -146,10 +147,13 @@ h1 {
   border-bottom: 2px #03A9F4 solid;
 }
 
-@media screen and (max-width: 1000px) {
-  body {
+@media screen and (max-width: 950px) {
+  .page {
+    width: 100%;
+    margin: auto;
     display: flex;
     flex-direction: column-reverse;
+    border: 1px grey solid;
   }
 
   .column {
