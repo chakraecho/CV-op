@@ -1,5 +1,5 @@
 body {
-  padding: 0px;
+  padding: 20px 0px;
   margin: 0px;
   width: 100%;
   display: flex;
@@ -78,7 +78,7 @@ h1 {
 .column_photo_block {
   margin: auto;
   width: 50%;
-  align-self: center;
+  padding-top: 20px;
 }
 .column_description {
   width: 95%;
@@ -169,10 +169,13 @@ h1 {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 1000px) {
-  body {
+@media screen and (max-width: 950px) {
+  .page {
+    width: 100%;
+    margin: auto;
     display: flex;
     flex-direction: column-reverse;
+    border: 1px grey solid;
   }
 
   .column {
