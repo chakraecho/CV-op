@@ -17,6 +17,7 @@
         width: 100%;
 
         &_section {
+            width: 33.33333333333333333333333333333333333%;
         }
 
         &_photo {
@@ -30,21 +31,32 @@
             }
         }
 
-        &_contact {
-            width: 33.33333333333333333333333333333333333%;
-        }
-
-        &_about {
-            width: 33.33333333333333333333333333333333333%;
-        }
-
-        &_hobby {
-            width: 33.33333333333333333333333333333333333%;
-            margin: 0px;
-        }
     }
 
     #main_content {
         width: 100%;
     }
+#column {
+    &_photo {
+        width: 100%;
+    }
+
+    &_hobby {
+        margin: 0px;
+    }
 }
+.hobby {
+    display:flex;
+    justify-content:center;
+    &_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid $title-color;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        font-size: 1.5em;
+        color: $title-color;
+    }
+}}

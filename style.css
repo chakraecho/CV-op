@@ -7,14 +7,6 @@ body {
   font-family: "Cabin-Regular", sans-serif;
 }
 
-.page {
-  width: 75%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  border: 1px grey solid;
-}
-
 .column {
   width: 35%;
   background-color: #03A9F4;
@@ -57,6 +49,7 @@ h1 {
 .column {
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 .column_title p {
   font-size: 2em;
@@ -78,7 +71,6 @@ h1 {
   margin: auto;
   width: 50%;
   align-self: center;
-  padding-top: 10px;
 }
 .column_description {
   width: 95%;
@@ -111,6 +103,7 @@ h1 {
 
 #main_content {
   width: 65%;
+  padding-bottom: 20px;
 }
 #main_header_title_name {
   color: #03A9F4;
@@ -147,13 +140,31 @@ h1 {
   border-bottom: 2px #03A9F4 solid;
 }
 
-@media screen and (max-width: 950px) {
-  .page {
-    width: 100%;
-    margin: auto;
+.list {
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #03A9F4;
+  display: inline-block;
+  margin: 0.5em;
+  position: relative;
+}
+.list_main::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 1em;
+  height: 1em;
+  border: 2px #03A9F4 solid;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
     display: flex;
     flex-direction: column-reverse;
-    border: 1px grey solid;
   }
 
   .column {
@@ -161,6 +172,9 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+  }
+  .column_section {
+    width: 33.3333333333%;
   }
   .column_photo {
     height: auto;
@@ -171,19 +185,32 @@ h1 {
     width: 20%;
     height: auto;
   }
-  .column_contact {
-    width: 33.3333333333%;
-  }
-  .column_about {
-    width: 33.3333333333%;
-  }
-  .column_hobby {
-    width: 33.3333333333%;
-    margin: 0px;
-  }
 
   #main_content {
     width: 100%;
+  }
+
+  #column_photo {
+    width: 100%;
+  }
+  #column_hobby {
+    margin: 0px;
+  }
+
+  .hobby {
+    display: flex;
+    justify-content: center;
+  }
+  .hobby_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #808080;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    font-size: 1.5em;
+    color: #808080;
   }
 }
 
