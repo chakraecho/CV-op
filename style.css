@@ -186,12 +186,40 @@ h1 {
 }
 
 @media screen and (max-width: 950px) {
+  body {
+    padding: 0px;
+  }
+
   .page {
     width: 100%;
     margin: auto;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     border: 1px grey solid;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #header_photo {
+    height: auto;
+    padding-top: 20px;
+    width: 100%;
+  }
+  #header_photo_block {
+    width: 20%;
+    height: auto;
+  }
+
+  #main_header_title {
+    width: 100%;
   }
 
   .column {
@@ -202,15 +230,6 @@ h1 {
   }
   .column_section {
     width: 33.3333333333%;
-  }
-  .column_photo {
-    height: auto;
-    padding-top: 20px;
-    width: 100%;
-  }
-  .column_photo_block {
-    width: 20%;
-    height: auto;
   }
 
   #main_content {

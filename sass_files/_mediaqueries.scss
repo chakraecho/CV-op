@@ -1,25 +1,23 @@
 @media screen and (max-width:950px) {
     body{
-
+        padding:0px;
     }
     .page {
         width: 100%;
         margin: auto;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         border: 1px grey solid;
     }
-
-    .column {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-
-        &_section {
-            width: 33.33333333333333333333333333333333333%;
-        }
-
+    main{
+        display:flex;
+        flex-direction:column-reverse;
+    }
+    header{
+        display:flex;
+        flex-direction:column;
+    }
+    #header {
         &_photo {
             height: auto;
             padding-top: 20px;
@@ -30,7 +28,23 @@
                 height: auto;
             }
         }
+    }
+    #main{
+        &_header{
+            &_title{
+                width:100%;
+            }
+        }
+    }
+    .column {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
 
+        &_section {
+            width: 33.33333333333333333333333333333333333%;
+        }
     }
 
     #main_content {
