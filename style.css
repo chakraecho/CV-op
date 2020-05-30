@@ -170,6 +170,10 @@ h1 {
 }
 
 @media screen and (max-width: 950px) {
+  body {
+    padding: 0px;
+  }
+
   .page {
     width: 100%;
     margin: auto;
