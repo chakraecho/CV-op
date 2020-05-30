@@ -1,20 +1,9 @@
-.column {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-
-    &_title {
-        p {
-            font-size: 2em;
-            background-color: $title-color;
-            text-align: center;
-            color: $main-color;
-        }
-    }
-
+#header {
     &_photo {
         height: 350px;
         display: flex;
+        width:35%;
+        background-color:$main-color;
 
         &_img {
             width: 100%;
@@ -25,16 +14,35 @@
 
         &_block {
             margin: auto;
-            width: 50%;
-            padding-top:20px;
+
+            height:50%;
+            padding-top: 20px;
         }
     }
+}
+
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+
+        &_title {
+            p {
+                font-size: 2em;
+                background-color: $title-color;
+                text-align: center;
+                color: $main-color;
+            }
+        }
+    
 
     &_description {
         width: 95%;
         margin: auto;
     }
-}
+    }
+
 #column{
     &_hobby{
         margin-top:auto;
@@ -69,12 +77,16 @@
 
     &_header {
         &_title {
+            width: 65%;
+
             &_name {
                 color: $main-color;
+                padding: 0px 10px;
             }
 
             &_description {
                 font-size: 2.5em;
+                padding: 0px 10px;
             }
         }
     }
