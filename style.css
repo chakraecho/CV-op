@@ -7,14 +7,6 @@ body {
   font-family: "Cabin-Regular", sans-serif;
 }
 
-.page {
-  width: 75%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  border: 1px grey solid;
-}
-
 .column {
   width: 35%;
   background-color: #03A9F4;
