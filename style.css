@@ -170,6 +170,11 @@ h1 {
   border-radius: 50%;
 }
 
+@media screen and (min-width: 951px) and (max-width: 1000px) {
+  .page {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 950px) {
   body {
     padding: 0px;
