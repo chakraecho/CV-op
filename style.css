@@ -52,6 +52,7 @@ h1 {
 .section_title h3 {
   font-size: 3em;
   border-bottom: #03A9F4 2px solid;
+  font-weight: normal;
 }
 
 .column {
