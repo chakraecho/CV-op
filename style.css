@@ -171,6 +171,10 @@ h1 {
 }
 
 @media screen and (min-width: 951px) and (max-width: 1000px) {
+  body {
+    padding: 0px;
+  }
+
   .page {
     width: 100%;
   }
