@@ -1,24 +1,22 @@
-@media screen and (min-width:951px) and (max-width:1000px){
+@media screen and (min-width:701px) and (max-width:1200px){
     body{
         padding:0px;
+        overflow-x:hidden;
     }
     .page{
         width:100%;
+        border:none;
+        display:flex;
+        flex-direction:column-reverse;
     }
-}
-
-@media screen and (max-width:950px) {
-    body{
-        padding:0px;
+    #main_content{
+        width:100%;
     }
-    .page {
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column-reverse;
-        border: 1px grey solid;
+    #column{
+        &_photo{
+            width:100%;
+        }
     }
-
     .column {
         display: flex;
         flex-direction: row;
@@ -26,7 +24,84 @@
         width: 100%;
 
         &_section {
-            width: 33.33333333333333333333333333333333333%;
+            width: 33.33333333333333333333%;
+        }
+
+        &_photo {
+            height: auto;
+            padding-top: 20px;
+            width: 100%;
+
+            &_block {
+                width: 20%;
+                height: auto;
+            }
+        }
+    }
+    #column {
+        &_photo {
+            width: 100%;
+        }
+
+        &_hobby {
+            margin: 0px;
+            &_row{
+                display:flex;
+                flex-direction:column;
+                height:200px;
+            }
+        }
+    }
+    .hobby {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: auto;
+        align-items:center;
+        height:auto;
+
+        &_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid $title-color;
+            border-radius: 50%;
+            height: 2em;
+            width: 2em;
+            font-size: 1em;
+            color: $title-color;
+        }
+    }
+    .section_title {
+        h3 {
+            overflow-wrap: break-word;
+            font-size: 2em;
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    body {
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    .page {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        border: none;
+
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+
+        &_section {
+            width: 100%;
         }
 
         &_photo {
@@ -56,7 +131,9 @@
 }
 .hobby {
     display:flex;
-    justify-content:center;
+    flex-direction:column;
+    justify-content:space-around;
+    width:auto;
     &_img {
         display: flex;
         justify-content: center;
@@ -68,4 +145,13 @@
         font-size: 1.5em;
         color: $title-color;
     }
-}}
+}
+    .section_title {
+        h3 {
+            overflow-wrap: break-word;
+            font-size: 2em;
+        }
+    }
+
+}
+

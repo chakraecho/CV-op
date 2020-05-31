@@ -50,7 +50,7 @@ h1 {
 }
 
 .section_title h3 {
-  font-size: 3em;
+  font-size: 2.5em;
   border-bottom: #03A9F4 2px solid;
   font-weight: normal;
 }
@@ -170,26 +170,25 @@ h1 {
   border-radius: 50%;
 }
 
-@media screen and (min-width: 951px) and (max-width: 1000px) {
+@media screen and (min-width: 701px) and (max-width: 1200px) {
   body {
     padding: 0px;
+    overflow-x: hidden;
   }
 
   .page {
     width: 100%;
-  }
-}
-@media screen and (max-width: 950px) {
-  body {
-    padding: 0px;
-  }
-
-  .page {
-    width: 100%;
-    margin: auto;
+    border: none;
     display: flex;
     flex-direction: column-reverse;
-    border: 1px grey solid;
+  }
+
+  #main_content {
+    width: 100%;
+  }
+
+  #column_photo {
+    width: 100%;
   }
 
   .column {
@@ -200,6 +199,76 @@ h1 {
   }
   .column_section {
     width: 33.3333333333%;
+  }
+  .column_photo {
+    height: auto;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .column_photo_block {
+    width: 20%;
+    height: auto;
+  }
+
+  #column_photo {
+    width: 100%;
+  }
+  #column_hobby {
+    margin: 0px;
+  }
+  #column_hobby_row {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+
+  .hobby {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: auto;
+    align-items: center;
+    height: auto;
+  }
+  .hobby_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #808080;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    font-size: 1em;
+    color: #808080;
+  }
+
+  .section_title h3 {
+    overflow-wrap: break-word;
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 700px) {
+  body {
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  .page {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    border: none;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .column_section {
+    width: 100%;
   }
   .column_photo {
     height: auto;
@@ -224,7 +293,9 @@ h1 {
 
   .hobby {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: auto;
   }
   .hobby_img {
     display: flex;
@@ -236,6 +307,11 @@ h1 {
     width: 40px;
     font-size: 1.5em;
     color: #808080;
+  }
+
+  .section_title h3 {
+    overflow-wrap: break-word;
+    font-size: 2em;
   }
 }
 
