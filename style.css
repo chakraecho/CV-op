@@ -95,17 +95,14 @@ h1 {
   justify-content: space-around;
 }
 
-.hobby {
-  width: 25%;
-}
 .hobby_img {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 3px solid #808080;
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
   font-size: 3em;
   color: #808080;
 }
