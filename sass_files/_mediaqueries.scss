@@ -6,7 +6,6 @@
     .page{
         width:100%;
         border:none;
-        display:flex;
         flex-direction:column-reverse;
     }
     #main_content{
@@ -18,7 +17,6 @@
         }
     }
     .column {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
@@ -46,14 +44,13 @@
         &_hobby {
             margin: 0px;
             &_row{
-                display:flex;
                 flex-direction:column;
                 height:200px;
+                align-items:center;
             }
         }
     }
     .hobby {
-        display: flex;
         flex-direction: column;
         justify-content: space-around;
         width: auto;
@@ -61,7 +58,6 @@
         height:auto;
 
         &_img {
-            display: flex;
             justify-content: center;
             align-items: center;
             border: 3px solid $title-color;
@@ -130,7 +126,6 @@
     }
 }
 .hobby {
-    display:flex;
     flex-direction:column;
     justify-content:space-around;
     width:auto;

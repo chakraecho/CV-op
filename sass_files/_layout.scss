@@ -4,7 +4,7 @@
     padding-bottom: 20px;
 
     &_title {
-        p {
+        h4 {
             font-size: 2em;
             background-color: $title-color;
             text-align: center;
@@ -14,7 +14,6 @@
 
     &_photo {
         height: 350px;
-        display: flex;
 
         &_img {
             width: 100%;

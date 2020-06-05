@@ -60,7 +60,7 @@ h1 {
   flex-direction: column;
   padding-bottom: 20px;
 }
-.column_title p {
+.column_title h4 {
   font-size: 2em;
   background-color: #808080;
   text-align: center;
@@ -68,7 +68,6 @@ h1 {
 }
 .column_photo {
   height: 350px;
-  display: flex;
 }
 .column_photo_img {
   width: 100%;
@@ -176,7 +175,6 @@ h1 {
   .page {
     width: 100%;
     border: none;
-    display: flex;
     flex-direction: column-reverse;
   }
 
@@ -189,7 +187,6 @@ h1 {
   }
 
   .column {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
@@ -214,13 +211,12 @@ h1 {
     margin: 0px;
   }
   #column_hobby_row {
-    display: flex;
     flex-direction: column;
     height: 200px;
+    align-items: center;
   }
 
   .hobby {
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: auto;
@@ -228,7 +224,6 @@ h1 {
     height: auto;
   }
   .hobby_img {
-    display: flex;
     justify-content: center;
     align-items: center;
     border: 3px solid #808080;
@@ -289,7 +284,6 @@ h1 {
   }
 
   .hobby {
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: auto;
