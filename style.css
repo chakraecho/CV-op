@@ -176,13 +176,10 @@ h1 {
     width: 100%;
     border: none;
     flex-direction: column-reverse;
+    /*set the page in column the blue section will be down*/
   }
 
   #main_content {
-    width: 100%;
-  }
-
-  #column_photo {
     width: 100%;
   }
 
@@ -193,6 +190,7 @@ h1 {
   }
   .column_section {
     width: 33.3333333333%;
+    /*align sections on one row*/
   }
   .column_photo {
     height: auto;
@@ -217,21 +215,13 @@ h1 {
   }
 
   .hobby {
-    flex-direction: column;
-    justify-content: space-around;
     width: auto;
-    align-items: center;
     height: auto;
   }
   .hobby_img {
-    justify-content: center;
-    align-items: center;
-    border: 3px solid #808080;
-    border-radius: 50%;
     height: 2em;
     width: 2em;
     font-size: 1em;
-    color: #808080;
   }
 
   .section_title h3 {
@@ -240,6 +230,7 @@ h1 {
   }
 }
 @media screen and (max-width: 700px) {
+  /*mobile*/
   body {
     padding: 0px;
     overflow-x: hidden;
@@ -247,19 +238,14 @@ h1 {
 
   .page {
     width: 100%;
-    margin: auto;
-    display: flex;
+    /*page set in one column*/
     flex-direction: column-reverse;
     border: none;
   }
 
   .column {
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
-  }
-  .column_section {
     width: 100%;
   }
   .column_photo {
@@ -284,20 +270,12 @@ h1 {
   }
 
   .hobby {
-    flex-direction: column;
-    justify-content: space-around;
     width: auto;
   }
   .hobby_img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid #808080;
-    border-radius: 50%;
     height: 40px;
     width: 40px;
     font-size: 1.5em;
-    color: #808080;
   }
 
   .section_title h3 {

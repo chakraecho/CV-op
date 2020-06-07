@@ -6,15 +6,10 @@
     .page{
         width:100%;
         border:none;
-        flex-direction:column-reverse;
+        flex-direction:column-reverse;  /*set the page in column the blue section will be down*/
     }
     #main_content{
         width:100%;
-    }
-    #column{
-        &_photo{
-            width:100%;
-        }
     }
     .column {
         flex-direction: row;
@@ -22,7 +17,7 @@
         width: 100%;
 
         &_section {
-            width: 33.33333333333333333333%;
+            width: 33.33333333333333333333%;  /*align sections on one row*/
         }
 
         &_photo {
@@ -51,21 +46,13 @@
         }
     }
     .hobby {
-        flex-direction: column;
-        justify-content: space-around;
         width: auto;
-        align-items:center;
         height:auto;
 
         &_img {
-            justify-content: center;
-            align-items: center;
-            border: 3px solid $title-color;
-            border-radius: 50%;
             height: 2em;
             width: 2em;
             font-size: 1em;
-            color: $title-color;
         }
     }
     .section_title {
@@ -76,29 +63,22 @@
     }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:700px) { /*mobile*/
     body {
         padding: 0px;
         overflow-x: hidden;
     }
     .page {
-        width: 100%;
-        margin: auto;
-        display: flex;
+        width: 100%;        /*page set in one column*/
         flex-direction: column-reverse;
         border: none;
 
     }
 
-    .column {
-        display: flex;
+    .column {  
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
-
-        &_section {
-            width: 100%;
-        }
 
         &_photo {
             height: auto;
@@ -126,19 +106,11 @@
     }
 }
 .hobby {
-    flex-direction:column;
-    justify-content:space-around;
     width:auto;
     &_img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 3px solid $title-color;
-        border-radius: 50%;
         height: 40px;
         width: 40px;
         font-size: 1.5em;
-        color: $title-color;
     }
 }
     .section_title {
