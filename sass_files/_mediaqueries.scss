@@ -6,7 +6,7 @@
     .page{
         width:100%;
         border:none;
-        flex-direction:column-reverse;  /*set the page in column the blue section will be down*/
+        flex-direction:column;  /*set the page in column the blue section will be down*/
     }
     #main_content{
         width:100%;
@@ -70,13 +70,12 @@
     }
     .page {
         width: 100%;        /*page set in one column*/
-        flex-direction: column-reverse;
+        flex-direction: column;
         border: none;
 
     }
 
     .column {  
-        flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
 
